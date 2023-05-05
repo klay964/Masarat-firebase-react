@@ -9,13 +9,14 @@ import {
   doc,
   deleteDoc,
 } from 'firebase/firestore';
-import useFetch from './hooks/useFetch';
+// import useFetch from './hooks/useFetch';
+
 function App() {
   const [tasks, setTasks] = useState([]);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
 
-  const { data, loading, error } = useFetch('https://fakestoreapi/customer');
+  // const { data, loading, error } = useFetch('https://fakestoreapi/customer');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
